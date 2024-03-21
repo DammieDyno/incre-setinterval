@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>increment and decrement</title>
+</head>
+<body>
+    <h1 id="crew"></h1>
+    <button onclick="add()">+</button>
+    <button onclick="remove()">-</button>
+</body>
+</html>
+
+<script>
+    let output = document.getElementById("crew")
+    let put = 0
+    output.innerHTML = put
+
+
+    function add() {
+
+        if (put == 10 ) {
+           return; 
+        }
+        put ++
+        output.innerHTML =put
+    }
+
+    function remove() {
+        if (put == 0 ) {
+           return; 
+        }
+        put --
+        output.innerHTML =put
+    }
+
+</script>
